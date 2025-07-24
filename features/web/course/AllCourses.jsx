@@ -44,6 +44,7 @@ const AllCourses = ({ courses }) => {
 
   return (
     <div className=" md:pt-12 pt-6 ">
+           <p>COURSES</p>
       <div className=" min-h-[400px] mx-auto relative">
         {!isLoading ? (
           <Tabs>

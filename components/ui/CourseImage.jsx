@@ -5,8 +5,8 @@ import { useState } from "react";
 import logo from "@/public/images/logo/logo.png";
 import { cn } from "@/utils/tailwind-utils";
 
-
 const CourseImage = ({ courseImage }) => {
+  // console.log('courseImage ',courseImage)
   const [imageError, setImageError] = useState(false);
   return (
     <div

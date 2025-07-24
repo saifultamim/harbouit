@@ -9,6 +9,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        custom: "0px 4px 4px 0px #00000040",
+      },
+      backgroundImage: {
+        "course-gradient": "linear-gradient(to top, #0088CF, #1C2A39 )",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

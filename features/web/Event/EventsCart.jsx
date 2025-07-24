@@ -24,8 +24,11 @@ const EventsCart = ({ cardsDisplay, stories = [] }) => {
               key={params?.xsl}
               className="border shadow-[#00000040] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] flex flex-col"
             >
-              <div className="bg-green-600 text-white px-6 py-5 text-xs font-bold">
-                {formatDate("2025-07-12")}
+              <div className="bg-[#0088CF] text-white px-6 py-5 text-xs font-bold">
+                {formatDate(params?.xdate)}
+                {/* {formatDate("2024-02-26")} */}
+                {/* 26th February 2024 */}
+                {/* {params.xdate} */}
               </div>
 
               <div className="px-9 py-10 flex flex-col h-full justify-between">
@@ -37,7 +40,7 @@ const EventsCart = ({ cardsDisplay, stories = [] }) => {
                   onClick={(e) => {
                     handleToggle(idx);
                   }}
-                  className="mt-4 text-white bg-[#00a657] px-5 py-2 rounded-lg text-xs font-medium self-start "
+                  className="mt-4 text-white bg-[#0088CF] px-5 py-2 rounded-lg text-xs font-medium self-start "
                 >
                   {expandedIndex === idx ? "See Less" : "See More"}
                 </button>

@@ -1,4 +1,5 @@
-import Hero from "@/components/web/Hero";
+
+import Hero from "@/components/ui/Hero";
 import AboutCompnay from "@/features/web/about/AboutCompany";
 import Events from "@/features/web/common/Events";
 import Instructor from "@/features/web/common/Instructor";
@@ -14,8 +15,8 @@ export default function AboutPage() {
       <Instructor />
       <PromoBanner />
       <WhyUs />
-      <Events />
-      <SuccessStory />
+      {/* <Events />
+      <SuccessStory /> */}
     </>
   );
 }

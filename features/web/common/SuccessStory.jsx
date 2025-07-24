@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const SuccessStory = () => {
   return (
-    <section className="grid grid-cols-3">
+    <section className="">
       {SUCCESS_STORIES?.map((story, idx) => (
         <div key={idx}>
           <Image src={story.img} alt="story" />

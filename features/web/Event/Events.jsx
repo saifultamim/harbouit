@@ -8,12 +8,14 @@ const Events = ({title="events"}) => {
       const cardsDisplay =
     title === STORIES_VIEW.STORIES ? stories.length : STORIES_VIEW.CARD_DISPLAY;
     return (
-        <Container>
+        <Container className='mt-16 md:mt-28 lg:mt-40'>
           
-      <EventsTitle title={title} />
+      <h2 className="text-center text-[#262262] text-xl font-bold md:mb-14 mb-10 mt-6 capitalize">
+        {title}
+      </h2>
       <EventsCart cardsDisplay={cardsDisplay} stories={stories} />
 
-      {title.toLowerCase() == STORIES_VIEW.NEWSLETTER && (
+      {/* {title.toLowerCase() == STORIES_VIEW.NEWSLETTER && (
         <div className="mt-7">
           <Link
             href="/stories"
@@ -24,7 +26,7 @@ const Events = ({title="events"}) => {
             </button>
           </Link>
         </div>
-      )}
+      )} */}
 
         </Container>
     )

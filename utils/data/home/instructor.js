@@ -6,19 +6,19 @@ export const INSTRUCTORS = [
   {
     img: instructor2,
     name: "ABDUR RAHMAN",
-    experArea: "Top Rated Freelancer",
+    expertArea: "Top Rated Freelancer",
     education: "Digital Marketing Instructor, ABCLIT",
   },
   {
     img: instructor1,
     name: "NUR NOBI",
-    experArea: "Top Rated Freelancer",
+    expertArea: "Top Rated Freelancer",
     education: "Digital Marketing Instructor, ABCLIT",
   },
   {
     img: instructor3,
     name: "FUAD FARABI",
-    experArea: "Top Rated Freelancer",
+    expertArea: "Top Rated Freelancer",
     education: "Digital Marketing Instructor, ABCLIT",
   },
 ];

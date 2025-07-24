@@ -1,6 +1,6 @@
 
 // demoCourses.js
-
+import DM from '@/public/images/courses/DM.png'
 export const courses = [
   {
     id: 1,
@@ -8,9 +8,10 @@ export const courses = [
     description:
       "Learn SEO, social media ads, content marketing, and email funnels to grow businesses online.",
     xtype: "digital marketing",
-    image: "/images/courses/digital-marketing.jpg", // Add an image path
+    ximage: DM, // Add an image path
     price: "$199",
     duration: "3 Months",
+    xitemcode: 'TM0014',
   },
   {
     id: 2,
@@ -18,9 +19,10 @@ export const courses = [
     description:
       "Hands-on training in AI models, Python, and deep learning techniques for real-world applications.",
     xtype: "artificial intelligence",
-    image: "/images/courses/ai-bootcamp.jpg",
+    ximage: DM,
     price: "$299",
     duration: "4 Months",
+    xitemcode: 'TM0014',
   },
   {
     id: 3,
@@ -28,9 +30,10 @@ export const courses = [
     description:
       "Master Figma, wireframing, and user experience design to create stunning web and app interfaces.",
     xtype: "ui/ux design",
-    image: "/images/courses/uiux.jpg",
+    ximage: DM,
     price: "$149",
     duration: "2 Months",
+    xitemcode: 'TM0014',
   },
   {
     id: 4,
@@ -38,9 +41,10 @@ export const courses = [
     description:
       "Improve your English speaking, listening, and confidence with practical conversational lessons.",
     xtype: "spoken english",
-    image: "/images/courses/spoken-english.jpg",
+    ximage: DM,
     price: "$99",
     duration: "6 Weeks",
+    xitemcode: 'TM0014',
   },
   {
     id: 5,
@@ -48,9 +52,10 @@ export const courses = [
     description:
       "Get exam-ready with professional guidance for banking diploma certifications.",
     xtype: "banking diploma",
-    image: "/images/courses/banking.jpg",
+    ximage: DM,
     price: "$129",
     duration: "8 Weeks",
+    xitemcode: 'TM0014',
   },
   {
     id: 6,
@@ -58,9 +63,10 @@ export const courses = [
     description:
       "Learn Adobe After Effects, motion design principles, and video animation techniques.",
     xtype: "motion graphics",
-    image: "/images/courses/motion-graphics.jpg",
+    ximage: DM,
     price: "$179",
     duration: "3 Months",
+    xitemcode: 'TM0014',
   },
   {
     id: 7,
@@ -68,8 +74,9 @@ export const courses = [
     description:
       "Master Photoshop, Illustrator, and design fundamentals for professional projects.",
     xtype: "graphics design",
-    image: "/images/courses/graphics-design.jpg",
+    ximage: DM,
     price: "$139",
     duration: "2.5 Months",
+    xitemcode: 'TM0014',
   },
 ];

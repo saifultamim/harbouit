@@ -1,4 +1,4 @@
-import Hero from "@/components/web/Hero";
+import Hero from "@/components/ui/Hero";
 import Events from "@/features/web/common/Events";
 import Gallery from "@/features/web/common/Gallery";
 import Instructor from "@/features/web/common/Instructor";
@@ -16,10 +16,13 @@ export default function HomePage() {
       <HQVideo />
       <PromoBanner />
       <WhyUs />
-      <Events />
-      <SuccessStory />
+      {/* <Events /> */}
+      {/* <SuccessStory /> */}
       <Instructor />
-      <Gallery />
+      <Gallery /> 
+      
+    {/*  */}
+    
     </>
   );
 }

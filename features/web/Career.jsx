@@ -4,6 +4,8 @@ import Label from "@/components/ui/Label";
 import Image from "next/image";
 import { useState } from "react";
 import career from '@/public/images/career/career.png'
+import { Container } from "@/components/ui/Container";
+import Button from "@/components/ui/Button";
 
 const Career = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,12 +16,14 @@ const Career = () => {
     setIsOpen(false);
   };
   return (
-    <div className="">
-      <div className="relative z-10 bg-[#F8F8F8] shadow-lg rounded-lg  mx-auto mt-10 border border-green-600 top-[16px] md:top-[28px] lg:top-[38px] py-3 md:py-14 lg:py-20 grid grid-cols-2">
-      <div>
+    <Container className="mt-16 md:mt-28 lg:mt-40">
+      <div className="relative z-10 bg-[#F8F8F8] shadow-lg rounded-lg  mx-auto mt-10 top-[16px] md:top-[28px] lg:top-[38px] py-3 md:py-14 lg:py-20 grid md:grid-cols-2 lg:px-9">
+      <div className=''>
         <Image src={career} alt="career image" />
        </div>
-        <form className=" space-y-2 md:space-y-4 px-3 md:px-0 md:w-2/3 mx-auto">
+       <div className=" space-y-2 md:space-y-4 px-3 w-full mx-auto">
+        <h2 className="text-[#262262] montserrat font-semibold text-xl text-end">CAREER</h2>
+         <form className="space-y-3">
           <div>
             <Label>NAME</Label>
             <Input type="text" name="name" className="w-full mt-1" />
@@ -87,14 +91,15 @@ const Career = () => {
             <Label>APPOINTMENT DATE</Label>
             <Input type="date" name="date" className="w-full mt-1" />
           </div>
-          <div className="pt-6 md:pt-7 lg:pt-10">
-            <button className="w-full  text-white py-3 text-lg font-semibold rounded-md shadow-gray-400 shadow-md">
-              SUBMIT
-            </button>
+          <div className="pt-6 md:pt-5 montserrat">
+        
+            <Button className='bg-[#262262] text-xs py-3'>SUBMIT</Button>
+            <Button className="bg-[#0088CF] mt-4 text-xs py-3">LOG IN / SIGN UP</Button>
           </div>
         </form>
+       </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

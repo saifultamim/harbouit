@@ -12,7 +12,7 @@ import { FaChalkboardUser } from "react-icons/fa6";
 
 const InfoItem = ({ icon: Icon, label, value }) => (
   <div className="flex gap-3 items-center font-semibold">
-    {/* <Icon size={37} /> */}
+    <Icon size={37} />
     <h4 className="flex flex-col text-[14px]">
       <span>{label}:</span>
       <span>{value}</span>
@@ -22,13 +22,13 @@ const InfoItem = ({ icon: Icon, label, value }) => (
 
 const SpecificCourse = () => {
   return (
-    <main className=" mb-5 mt-20">
-      <div>
-        <Container>
-          <div className="grid lg:grid-cols-[2fr_4fr] items-end ">
+
+      
+        <Container className="mt-16 md:mt-28 lg:mt-40">
+          <div className=" items-end ">
             <div className=" mb-3">
               <div className="max-sm:pb-0 gap-1  uppercase w-full">
-                <h4 className=" font-semibold text-base  max-sm:text-[14px] lg:text-end  lg:mt-0 md:mt-3 mt-3 px-2">
+                <h4 className=" font-semibold text-base  max-sm:text-[14px] md:text-end  lg:mt-0 md:mt-3 mt-3 px-2">
                   <span className="lg:pl-3">{course?.xdesc}</span>
                 </h4>
 
@@ -39,7 +39,7 @@ const SpecificCourse = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-[5fr_4fr] gap-6 px-2 mt-10">
             <div className="bg-white font-semibold border border-gray-400 shadow-md shadow-gray-300 p-6 md:p-10 rounded-lg flex flex-col gap-3 ">
-              <h4 className="text-2xl font-semibold text-[#046938] max-sm:text-xl">
+              <h4 className="text-2xl font-semibold text-[#2457C5] max-sm:text-xl">
                 What to Expect
               </h4>
               <ul className="flex flex-col gap-2 font-[300]">
@@ -51,13 +51,13 @@ const SpecificCourse = () => {
                       }`}
                     key={index}
                   >
-                    {item && <BsCheckCircleFill className="text-[#046938]" />}
+                    {item && <BsCheckCircleFill className="text-[#2457C5]" />}
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
-            <div className=" font-semibold  shadow-md shadow-gray-300  p-6 md:p-12 rounded-lg flex flex-col gap-3 bg-[#046938] text-gray-50">
+            <div className=" font-semibold  shadow-md shadow-gray-300  p-6 md:p-12 rounded-lg flex flex-col gap-3 bg-[#2457C5] text-gray-50">
               <h4 className="uppercase font-semibold text-2xl  max-sm:text-xl">
                 course details
               </h4>
@@ -77,8 +77,8 @@ const SpecificCourse = () => {
                   label="Doubt Session"
                   value={classDetails?.doubt_session || ""}
                 />
-                <button className="px-4 py-1 rounded-md bg-green-600 hover:bg-green-650 text-white font-semibold my-4 w-32">
-                  Enroll Now
+                <button className="px-9 py-2 rounded-md bg-[#06005D] text-white font-semibold my-4 w-fit montserrat">
+                 ENROLL NOW
                 </button>
               </div>
             </div>
@@ -86,7 +86,7 @@ const SpecificCourse = () => {
 
           <div className="mt-12 px-2">
             <div className="bg-white font-semibold border border-gray-300 shadow-md shadow-gray-300 p-6 md:p-12 rounded-lg flex flex-col gap-3">
-              <h4 className="uppercase font-semibold max-sm:text-xl text-2xl text-[#046938]">
+              <h4 className="uppercase font-semibold max-sm:text-xl text-2xl text-[#06005D]">
                 WHAT YOU’LL LEARN
               </h4>
               <ul className="flex flex-col gap-2 font-semibold">
@@ -96,14 +96,14 @@ const SpecificCourse = () => {
                       className="flex gap-2  font-semibold text-[14px] relative"
                       key={index}
                     >
-                      <BsCheckCircleFill className="text-[#046938] text-[16px] absolute left-0 z-10 mt-[2px]" />
+                      <BsCheckCircleFill className="text-[#2457C5] text-[16px] absolute left-0 z-10 mt-[2px]" />
 
                       <span className="ml-6">{item ? item : ""}</span>
                     </li>
                   ))}
               </ul>
               <div className="flex flex-col gap-3">
-                <h4 className="uppercase font-semibold max-sm:text-xl text-2xl text-[#046938]">
+                <h4 className="uppercase font-semibold max-sm:text-xl text-2xl text-[#06005D]">
                   REQUIREMENTS
                 </h4>
                 <ul className="flex flex-col gap-2 font-[300]">
@@ -113,7 +113,7 @@ const SpecificCourse = () => {
                         className="flex gap-2  font-semibold text-[14px] relative"
                         key={index}
                       >
-                        <BsCheckCircleFill className="text-[#046938] text-[16px] absolute left-0 z-10 mt-[2px]" />
+                        <BsCheckCircleFill className="text-[#2457C5] text-[16px] absolute left-0 z-10 mt-[2px]" />
 
                         <span className="ml-6">{item ? item : ""}</span>
                       </li>
@@ -124,7 +124,7 @@ const SpecificCourse = () => {
           </div>
           <div className="pt-12 px-2 pb-5">
             <div className="bg-white font-semibold border border-gray-300 shadow-md shadow-gray-300 p-6 md:p-12 rounded-lg flex flex-col gap-3">
-              <h4 className="uppercase font-semibold max-sm:text-xl text-2xl text-[#046938]">
+              <h4 className="uppercase font-semibold max-sm:text-xl text-2xl text-[#06005D]">
                 FREQUENTLY ASKED QUESTIONS
               </h4>
               <div className="flex flex-col gap-5 max-sm:text-sm text-[20px] font-normal">
@@ -148,8 +148,8 @@ const SpecificCourse = () => {
             </div>
           </div>
         </Container>
-      </div>
-    </main>
+     
+
   );
 };
 export default SpecificCourse;

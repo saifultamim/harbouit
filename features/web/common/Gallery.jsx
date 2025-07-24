@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const Gallery = () => {
   return (
-    <section className="grid grid-cols-3">
+    <section className="grid grid-cols-3 justify-center mt-9 md:mt-24">
       {GALLERIES.map((gallery, idx) => (
         <div key={idx}>
-          <Image src={gallery} alt="Gallery" />
+          <Image src={gallery} alt="Gallery" className="w-full" />
         </div>
       ))}
     </section>

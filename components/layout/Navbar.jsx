@@ -49,18 +49,18 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50">
-      <div className="md:w-9/12 px-2 mx-auto">
-        <nav className="md:py-4 py-[0.3rem] px-6 flex items-center justify-between bg-white shadow-md rounded-lg">
-          <div className="flex items-center w-24 sm:w-32">
+    <div className="fixed top-0 left-0 w-full z-50  md:mt-5 lg:mt-12">
+      <div className="md:max-w-6xl px-2 mx-auto">
+        <nav className="md:py-4 py-[0.3rem] px-3 sm:px-6 flex items-center justify-between bg-white shadow-md rounded-lg">
+          <div className="flex items-center  w-32 sm:w-56">
             <Link href="/">
-              <Image src={logo} alt="Logo" className="w-full h-auto" />
+              <Image src={logo} alt="Logo" className="" />
             </Link>
           </div>
 
           <div className="flex gap-5">
             {/* Desktop Menu */}
-            <div className="hidden lg:flex space-x-6 items-center text-xs font-semibold font-montserrat_sans_serif">
+            <div className="hidden lg:flex space-x-16 items-center text-xs lg:text-[15px] font-base font-montserrat_sans_serif">
               {navLinks.map(({ label, href }) => (
                 <Link
                   key={label}
@@ -78,7 +78,7 @@ const Navbar = () => {
                 <Link
                   href="/login"
                   onClick={handleLinkClick}
-                  className="text-xs font-semibold font-montserrat_sans_serif text-white px-4 py-2 rounded-lg bg-[#00A659]"
+                  className="text-xs font-semibold font-montserrat_sans_serif text-white px-14 py-3 rounded-lg bg-[#0F75BC]"
                 >
                   LOG IN
                 </Link>
@@ -118,23 +118,15 @@ const Navbar = () => {
               ))}
 
               <div className="pt-3 border-t border-gray-200 space-y-2">
-                {session ? (
+             
                   <Link
-                    href="/stuportal/dashboard"
-                    onClick={handleLinkClick}
-                    className="text-xs font-semibold font-montserrat_sans_serif text-white px-4 py-2 rounded-lg bg-[#00A659]"
-                  >
-                    Dashboard
-                  </Link>
-                ) : (
-                  <Link
-                    href="/login"
-                    onClick={handleLinkClick}
-                    className="text-xs font-semibold font-montserrat_sans_serif text-white px-4 py-2 rounded-lg bg-[#00A659]"
-                  >
-                    Log in / Register
-                  </Link>
-                )}
+                  href="/login"
+                  onClick={handleLinkClick}
+                  className="text-xs font-semibold font-montserrat_sans_serif text-white px-14 py-3 rounded-lg bg-[#0F75BC]"
+                >
+                  LOG IN
+                </Link>
+                
               </div>
             </div>
           )}
