@@ -22,7 +22,7 @@ const InfoItem = ({ icon: Icon, label, value }) => (
 
 const SpecificCourse = () => {
   return (
-        <Container className="mt-16 md:mt-28 lg:mt-48 montserrat">
+        <Container className="mt-16 md:mt-28 lg:mt-48 mb-10 md:mb-20 lg:mb-20 montserrat">
           <div className=" items-end ">
             <div className=" mb-3">
               <div className="max-sm:pb-0 gap-1  uppercase w-full">

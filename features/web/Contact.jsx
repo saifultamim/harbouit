@@ -17,7 +17,7 @@ const Contact = () => {
     setIsOpen(false);
   };
   return (
-    <Container className="mt-16 md:mt-28 lg:mt-40">
+    <Container className="mt-16 md:mt-28 lg:mt-40 mb-10 md:mb-20 lg:mb-32">
       <div className="relative z-10 bg-[#F8F8F8] shadow-lg rounded-lg  mx-auto mt-10 top-[16px] md:top-[28px] lg:top-[38px] py-3  md:py-6 lg:py-8 grid md:grid-cols-2 lg:px-9 lg:items-end gap-9">
       <div className='hidden sm:block px-3'>
          <iframe

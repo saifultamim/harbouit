@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
@@ -9,7 +8,6 @@ import Image from "next/image";
 import logo from "@/public/images/logo/logo.png";
 
 const Navbar = () => {
-
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
@@ -37,7 +35,7 @@ const Navbar = () => {
   }, []);
 
   const handleLinkClick = () => {
-    setIsOpen(false); 
+    setIsOpen(false);
   };
 
   const navLinks = [
@@ -74,15 +72,13 @@ const Navbar = () => {
 
             {/* Desktop Auth Link */}
             <div className="hidden lg:flex space-x-6 text-sm">
-            
-                <Link
-                  href="/login"
-                  onClick={handleLinkClick}
-                  className="text-xs font-semibold font-montserrat_sans_serif text-white px-14 py-3 rounded-lg bg-[#0F75BC]"
-                >
-                  LOG IN
-                </Link>
-            
+              <Link
+                href="/login"
+                onClick={handleLinkClick}
+                className="text-xs font-semibold font-montserrat_sans_serif text-white px-14 py-3 rounded-lg bg-[#0F75BC]"
+              >
+                LOG IN
+              </Link>
             </div>
           </div>
 
@@ -118,15 +114,13 @@ const Navbar = () => {
               ))}
 
               <div className="pt-3 border-t border-gray-200 space-y-2">
-             
-                  <Link
+                <Link
                   href="/login"
                   onClick={handleLinkClick}
                   className="text-xs font-semibold font-montserrat_sans_serif text-white px-14 py-3 rounded-lg bg-[#0F75BC]"
                 >
                   LOG IN
                 </Link>
-                
               </div>
             </div>
           )}

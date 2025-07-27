@@ -16,7 +16,7 @@ const Login = () => {
     setIsOpen(false);
   };
   return (
-    <Container className="max-w-3xl mt-16 md:mt-28 lg:mt-60">
+    <Container className="max-w-3xl mt-16 md:mt-28 lg:mt-60 mb-10 md:mb-20 lg:mb-32">
       <h2 className="text-[#262262] montserrat font-semibold text-xl text-center">
         LOG IN
       </h2>

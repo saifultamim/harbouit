@@ -1,4 +1,3 @@
-
 import Hero from "@/components/ui/Hero";
 import AboutCompnay from "@/features/web/about/AboutCompany";
 import Events from "@/features/web/common/Events";
@@ -10,13 +9,15 @@ import WhyUs from "@/features/web/common/WhyUs";
 export default function AboutPage() {
   return (
     <>
-      <Hero about={true}  />
+      <Hero about={true} />
       <AboutCompnay />
       <Instructor />
       <PromoBanner />
       <WhyUs />
       <Events />
-      <SuccessStory />
+      <div className="mb-10 md:mb-20 lg:mb-24">
+        <SuccessStory />
+      </div>
     </>
   );
 }

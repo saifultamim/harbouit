@@ -9,9 +9,9 @@ import youtube from "@/public/images/logo/youtube.png";
 import Link from "next/link";
 
 const socialMedia = [
-  { link: "", img: facebook },
-  { link: "", img: linkedin },
-  { link: "", img: youtube },
+  { link: "#", img: facebook },
+  { link: "#", img: linkedin },
+  { link: "#", img: youtube },
 ];
 const Footer = () => {
   //py-9 mt-16
