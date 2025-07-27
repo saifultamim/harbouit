@@ -1,32 +1,35 @@
 import Image from "next/image";
 import events from "@/public/images/events/events.png";
 import { EVENTS } from "@/utils/data/home/events";
+import { Container } from "@/components/ui/Container";
 
 const Events = () => {
   return (
     <section className="montserrat">
-      <div className="">
+
+       <div className="relative ">
         {/* section-1 */}
-        <div className=" border-2 border-orange-600 ">
-          <Image src={events} alt="events" className="absolute object-cover" />
+        <div className="">
+          <Image src={events} alt="events" className="" />
         </div>
         {/* section-2 */}
-        <div className="flex border border-purple-600">
-          <div className="bg-[#0088CF] [writing-mode:vertical-rl] rotate-180 text-white h-full">
+        <div className="flex absolute top-0 h-full w-full justify-center gap-40">
+          <div className="bg-[#0088CF] [writing-mode:vertical-rl] rotate-180 text-white px-16 text-4xl font-bold leading-9 py-9">
             <p>UPCOMING</p>
             <p>EVENTS</p>
           </div>
-          <div className="z-10">
+          <div className="flex items-end gap-9 -translate-y-16 text-white">
             {EVENTS.map((param, idx) => (
-              <div key={idx}>
-                <Image src={param.img} alt="events" />
-                <p>{param.date}</p>
-                <p>{param.desc}</p>
+              <div key={idx} className="rounded-md bg-[#D9D9D9] bg-opacity-50 px-9 py-5">
+                <Image src={param.img} alt="events" className="-translate-y-12 bg-[#D9D9D9] py-4"/>
+                <p className="text-4xl font-bold">{param.date}</p>
+                <p className="text-2xl font-medium">{param.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
+
     </section>
   );
 };

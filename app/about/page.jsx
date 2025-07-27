@@ -15,8 +15,8 @@ export default function AboutPage() {
       <Instructor />
       <PromoBanner />
       <WhyUs />
-      {/* <Events />
-      <SuccessStory /> */}
+      <Events />
+      <SuccessStory />
     </>
   );
 }
