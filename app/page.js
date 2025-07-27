@@ -12,14 +12,14 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      {/* <Courses />
+      <Courses />
       <HQVideo />
       <PromoBanner />
       <WhyUs />
       <Events />
       <SuccessStory />
       <Instructor />
-      <Gallery /> */}
+      <Gallery />
     </>
   );
 }

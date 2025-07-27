@@ -43,9 +43,9 @@ const AllCourses = ({ courses }) => {
   };
 
   return (
-    <div className=" md:pt-12 pt-6 ">
-           <p>COURSES</p>
-      <div className=" min-h-[400px] mx-auto relative">
+    <div className="lg:w-[60rem] md:w-9/12  mx-auto pt-16 md:pt-28 lg:pt-40 px-2 md:px-0">
+           <p className="text-xl font-semibold montserrat text-center ">COURSES</p>
+      <div className=" min-h-[400px] mx-auto relative pt-4 md:pt-6">
         {!isLoading ? (
           <Tabs>
             <div className="flex items-center">
@@ -163,7 +163,7 @@ const AllCourses = ({ courses }) => {
                 <div className="border border-gray-200 bg-[#F6F6F6] py-7 mb-16 grid grid-cols-1 shadow-2xl min-h-[300px]">
                   {courseFilter?.length > 0 ? (
                    
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:mx-9 gap-6 ">
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:mx-9 gap-6 px-2 md:px-0">
                       {courseFilter?.map((item, index) => (
                         <CourseCart
                           key={index}

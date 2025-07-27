@@ -26,9 +26,6 @@ const EventsCart = ({ cardsDisplay, stories = [] }) => {
             >
               <div className="bg-[#0088CF] text-white px-6 py-5 text-xs font-bold">
                 {formatDate(params?.xdate)}
-                {/* {formatDate("2024-02-26")} */}
-                {/* 26th February 2024 */}
-                {/* {params.xdate} */}
               </div>
 
               <div className="px-9 py-10 flex flex-col h-full justify-between">

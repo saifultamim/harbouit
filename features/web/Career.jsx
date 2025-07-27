@@ -17,13 +17,13 @@ const Career = () => {
   };
   return (
     <Container className="mt-16 md:mt-28 lg:mt-40">
-      <div className="relative z-10 bg-[#F8F8F8] shadow-lg rounded-lg  mx-auto mt-10 top-[16px] md:top-[28px] lg:top-[38px] py-3 md:py-14 lg:py-20 grid md:grid-cols-2 lg:px-9">
-      <div className=''>
+      <div className="relative z-10 bg-[#F8F8F8] shadow-lg rounded-lg  mx-auto mt-10 top-[16px] md:top-[28px] lg:top-[38px] py-3 md:py-0 md:pt-14 lg:pt-16 grid md:grid-cols-2 items-end lg:px-9">
+      <div className='hidden sm:block'>
         <Image src={career} alt="career image" />
        </div>
        <div className=" space-y-2 md:space-y-4 px-3 w-full mx-auto">
         <h2 className="text-[#262262] montserrat font-semibold text-xl text-end">CAREER</h2>
-         <form className="space-y-3">
+         <form className="space-y-3 py-6">
           <div>
             <Label>NAME</Label>
             <Input type="text" name="name" className="w-full mt-1" />

@@ -6,9 +6,9 @@ import Image from "next/image";
 const Instructor = () => {
   return (
     <Container>
-      <div className="montserrat text-center mt-9 md:mt-24 mb-9 md:mb-16">
-        <h2 className="text-[#0088CF] font-black text-6xl">EXPERTS</h2>
-        <p className="text-2xl">you can count on</p>
+      <div className="montserrat text-center mt-9 md:mt-28 mb-9 md:mb-16">
+        <h2 className="text-[#0088CF] font-black text-2xl md:text-4xl lg:text-6xl">EXPERTS</h2>
+        <p className="text-lg md:text-2xl">you can count on</p>
       </div>
 
       <ReuseableSlider responsive={true}>

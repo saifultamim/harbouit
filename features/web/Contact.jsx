@@ -6,6 +6,7 @@ import { useState } from "react";
 import contact from '@/public/images/career/map.png'
 import { Container } from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
+import { setting } from "@/utils/data/constant";
 
 const Contact = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +18,17 @@ const Contact = () => {
   };
   return (
     <Container className="mt-16 md:mt-28 lg:mt-40">
-      <div className="relative z-10 bg-[#F8F8F8] shadow-lg rounded-lg  mx-auto mt-10 top-[16px] md:top-[28px] lg:top-[38px] py-3 md:py-14 lg:py-20 grid md:grid-cols-2 lg:px-9 lg:items-end gap-9">
-      <div className=''>
-        <Image src={contact} alt="contact image" />
+      <div className="relative z-10 bg-[#F8F8F8] shadow-lg rounded-lg  mx-auto mt-10 top-[16px] md:top-[28px] lg:top-[38px] py-3  md:py-6 lg:py-8 grid md:grid-cols-2 lg:px-9 lg:items-end gap-9">
+      <div className='hidden sm:block px-3'>
+         <iframe
+              src={setting.externalLinks.googleMap}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              className="rounded-lg shadow-lg h-[730px]"
+            ></iframe>
        </div>
        <div className=" space-y-2 md:space-y-4 px-3 w-full mx-auto">
         <h2 className="text-[#262262] montserrat font-semibold text-xl text-end">CONTACT</h2>

@@ -16,9 +16,12 @@ const Login = () => {
     setIsOpen(false);
   };
   return (
- <Container className='max-w-xl mt-16 md:mt-28 lg:mt-40'>
-   <div className="relative z-10 bg-[#F8F8F8] shadow-xl rounded-lg  mx-auto mt-10 top-[16px] md:top-[28px] lg:top-[38px] py-3 md:py-14 lg:py-14 md:px-9">
-        <form className=" space-y-2 md:space-y-4 px-3 md:px-0  mx-auto">
+    <Container className="max-w-3xl mt-16 md:mt-28 lg:mt-60">
+      <h2 className="text-[#262262] montserrat font-semibold text-xl text-center">
+        LOG IN
+      </h2>
+      <div className="relative z-10 bg-[#F8F8F8] shadow-xl rounded-lg  mx-auto top-[13px] md:top-[28px] lg:top-[2px] py-3 md:py-14 lg:py-14 md:px-9">
+        <form className=" space-y-2 md:space-y-4 px-3 md:px-0  mx-auto py-3 md:py-0 md:w-2/3">
           <div>
             <Label>USER NAME</Label>
             <Input type="text" name="name" className="w-full mt-1" />
@@ -28,10 +31,12 @@ const Login = () => {
             <Input type="email" name="email" className="w-full mt-1" />
           </div>
 
-          <div className="mt-4">
+          <div className="pt-3 md:pt-2">
             <Button className="bg-[#262262] text-xs py-3">SUBMIT</Button>
 
-            <p className='montserrat text-xs font-normal text-center mt-12'>For New Registration, Click Here</p>
+            <p className="montserrat text-xs font-normal text-center mt-12">
+              For New Registration, Click Here
+            </p>
 
             <Button className="bg-[#0088CF] mt-4 text-xs py-3">
               LOG IN / SIGN UP
@@ -39,7 +44,7 @@ const Login = () => {
           </div>
         </form>
       </div>
- </Container>
+    </Container>
   );
 };
 
