@@ -1,9 +1,7 @@
-// demoStories.js
-
 export const stories = [
   {
     xsl: 1,
-    xdate: "2024-02-26", // Date format as expected by formatDate()
+    xdate: "2024-02-26",
     xtitle:
       "Harbour IT Launches a New AI-Powered Learning Platform to Help Students Upskill Faster",
   },
@@ -19,7 +17,7 @@ export const stories = [
     xtitle:
       "Harbour IT Alumni Land Top Jobs in FAANG Companies — Here’s How They Did It",
   },
- 
+
   {
     xsl: 4,
     xdate: "2025-03-05",
@@ -32,14 +30,12 @@ export const stories = [
     xtitle:
       "Student Success Story: From Beginner to Full-Stack Developer in Just 6 Months",
   },
-  
 ];
-// demoStoriesView.js
 
 export const STORIES_VIEW = {
   STORIES: "events",
   NEWSLETTER: "newsletter",
   NEWLETTER_TITLE: "No Newsletters Available at the Moment",
   STORIES_TITLE: "No Stories Found",
-  CARD_DISPLAY: 3, // Will display only 3 cards unless `title === STORIES`
+  CARD_DISPLAY: 3,
 };

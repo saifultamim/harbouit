@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/Container";
 
 const PromoBanner = () => {
   return (
-    <div className="bg-black py-6 md:py-12 text-white mt-9 md:mt-24">
+    <div className="bg-black py-6 md:py-12 lg:py-16 text-white mt-9 md:mt-16 lg:mt-24">
       <Container>
         <div className="md:flex justify-between items-center montserrat space-y-4 sm:space-y-0 text-center md:text-start">
           <h2 className="text-lg md:text-xl lg:text-3xl font-bold">

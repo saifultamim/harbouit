@@ -1,24 +1,12 @@
-// export const formatDate = (date, format = "DD MMM, YYYY", locale = "en") => {
-//   try {
-//     const formattedDate = moment(date).locale(locale).format(format);
-//     return formattedDate;
-//   } catch (error) {
-//     console.error(`Error formatting date: ${error.message}`);
-//     return "";
-//   }
-// };
-
-
 export function formatDate(dateInput) {
   const date = new Date(dateInput);
 
-  if (isNaN(date)) return ""; // Invalid date fallback
+  if (isNaN(date)) return "";
 
   const day = date.getDate();
-  const month = date.toLocaleString("en-US", { month: "long" }); // Full month name
+  const month = date.toLocaleString("en-US", { month: "long" });
   const year = date.getFullYear();
 
-  // Add proper suffix (st, nd, rd, th)
   const suffix =
     day % 10 === 1 && day !== 11
       ? "st"

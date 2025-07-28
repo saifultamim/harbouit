@@ -1,13 +1,11 @@
-
 import { Container } from "@/components/ui/Container";
 import Image from "next/image";
 import hqVideo from "@/public/images/home/hqVideo.png";
 
 const HQVideo = () => {
   return (
-    <Container className=''>
-
-       <div className="grid grid-cols-1 md:grid-cols-2 items-end  montserrat mt-8 md:gap-8 lg:mt-24 lg:gap-16">
+    <Container>
+      <div className="grid grid-cols-1 md:flex items-end  montserrat mt-8 md:mt-12 md:gap-8 lg:mt-24 lg:gap-14">
         <div className="mx-auto">
           <Image src={hqVideo} alt="hq video" />
         </div>
@@ -24,7 +22,6 @@ const HQVideo = () => {
           </p>
         </div>
       </div>
-
     </Container>
   );
 };

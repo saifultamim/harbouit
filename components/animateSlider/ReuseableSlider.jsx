@@ -2,8 +2,8 @@
 import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import leftArrow from '@/public/images/instructor/leftArrow.png'
-import rightArrow from '@/public/images/instructor/rightArrow.png'
+import leftArrow from "@/public/images/instructor/leftArrow.png";
+import rightArrow from "@/public/images/instructor/rightArrow.png";
 import Image from "next/image";
 const NextArrow = (props) => {
   const { onClick } = props;
@@ -12,8 +12,7 @@ const NextArrow = (props) => {
       className="absolute lg:-right-9 -right-3  top-1/2  transform -translate-y-1/2 z-10 cursor-pointer md:block hidden"
       onClick={onClick}
     >
-     
-      <Image src={rightArrow} alt='rightArrow' />
+      <Image src={rightArrow} alt="rightArrow" />
     </div>
   );
 };
@@ -25,7 +24,6 @@ const PrevArrow = (props) => {
       className="absolute top-1/2  lg:-left-9 -left-3 transform -translate-y-1/2 z-10 cursor-pointer md:block hidden"
       onClick={onClick}
     >
-     
       <Image src={leftArrow} alt="leftArrow" />
     </div>
   );
@@ -140,10 +138,7 @@ function ReuseableSlider({ children, responsive = false, slides = true }) {
   };
 
   return (
-    <div
-      ref={sliderRef}
-      className="slider-container relative"
-    >
+    <div ref={sliderRef} className="slider-container relative">
       <Slider {...settings}>{children}</Slider>
     </div>
   );

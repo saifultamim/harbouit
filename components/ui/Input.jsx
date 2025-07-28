@@ -1,10 +1,7 @@
-
-
 import { cn } from "@/utils/tailwind-utils";
 import * as React from "react";
 
-const Input = React.forwardRef(
-    ({ className, error, ...props }, ref) => {
+const Input = React.forwardRef(({ className, error, ...props }, ref) => {
   const errorMessage = Array.isArray(error) ? error.join(", ") : error;
 
   return (
@@ -33,8 +30,7 @@ const Input = React.forwardRef(
       </div>
     </div>
   );
-}
-)
+});
 
 Input.displayName = "Input";
 

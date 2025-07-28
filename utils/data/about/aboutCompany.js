@@ -1,6 +1,6 @@
-import aboutLogo from '@/public/images/logo/logo.png'
+import aboutLogo from "@/public/images/logo/logo.png";
 export const ABOUT_COMPANY = {
-    LOGO : aboutLogo,
+  LOGO: aboutLogo,
   WELCOME_MESSAGE: "Welcome to",
   HEADLINE: "Empowering the Future of Digital Innovation",
   ABOUT_US:

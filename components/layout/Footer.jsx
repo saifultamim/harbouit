@@ -14,14 +14,15 @@ const socialMedia = [
   { link: "#", img: youtube },
 ];
 const Footer = () => {
-  //py-9 mt-16
   return (
     <div className="bg-gradient-to-b from-[#0F75BC] to-[#262262] py-9">
       <Container className=" ">
         <div className="grid grid-cols-1 md:grid-cols-2 md:items-center justify-between text-white montserrat text-sm">
-          <div className="">
-            <Image alt="logo" src={logo} className="mx-auto sm:mx-0" />
-            <p className="w-full md:w-5/6 mt-7 text-justify sm:text-start">
+          <div>
+            <Link href="/">
+              <Image alt="logo" src={logo} className="mx-auto sm:mx-0" />
+            </Link>
+            <p className="w-full md:w-5/6 mt-4 md:mt-7 text-justify sm:text-start">
               {FOOTER.DESC}
             </p>
           </div>
@@ -38,7 +39,7 @@ const Footer = () => {
 
         <div className="flex items-center gap-5 mt-8">
           <hr className="w-full" />
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-2 md:gap-5">
             {socialMedia?.map((params, idx) => (
               <Link href={params.link}>
                 <Image key={idx} src={params.img} alt="social media" />

@@ -3,13 +3,14 @@ import FB from "@/public/images/home/facebook.png";
 import YT from "@/public/images/home/youtube.png";
 import LI from "@/public/images/home/linkedin.png";
 export const setting = {
- externalLinks :{
-    googleMap : "https://maps.google.com/maps?q=PCV7%2BHX%20Dhaka&t=m&z=17&output=embed&iwloc=near",
+  externalLinks: {
+    googleMap:
+      "https://maps.google.com/maps?q=PCV7%2BHX%20Dhaka&t=m&z=17&output=embed&iwloc=near",
     facebook: "",
     youtube: "",
     linkedin: "",
-  }
-}
+  },
+};
 
 export const FOOTER = {
   LOGO: footerLogo,

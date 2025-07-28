@@ -1,13 +1,9 @@
-
 "use client";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { useEffect, useState, useRef } from "react";
-// import "./tab-style.css";
 import { FaCircleChevronRight } from "react-icons/fa6";
 import CourseCart from "@/components/ui/CourseCart";
-// import Loader from "../loader/loader";
-// import CourseCart from "../CourseCart";
 
 const AllCourses = ({ courses }) => {
   const [courseFilter, setCourseFilter] = useState([]);
@@ -43,8 +39,8 @@ const AllCourses = ({ courses }) => {
   };
 
   return (
-    <div className="lg:w-[60rem] md:w-9/12  mx-auto pt-16 md:pt-28 lg:pt-40 px-2 md:px-0">
-           <p className="text-xl font-semibold montserrat text-center ">COURSES</p>
+    <div className="lg:w-[60rem] md:w-9/12  mx-auto pt-20 md:pt-28 lg:pt-40 px-2 md:px-0">
+      <p className="text-xl font-semibold montserrat text-center ">COURSES</p>
       <div className=" min-h-[400px] mx-auto relative pt-4 md:pt-6">
         {!isLoading ? (
           <Tabs>
@@ -57,6 +53,7 @@ const AllCourses = ({ courses }) => {
               >
                 <TabList className="text-lg font-semibold lg:flex max-sm:flex max-sm:flex-col max-sm:gap-1">
                   <Tab
+                    selectedClassName=" px-3 text-white bg-[#0088CF] rounded-lg"
                     onClick={() => filterCourse("digital marketing")}
                     style={{
                       textTransform: "uppercase",
@@ -69,6 +66,7 @@ const AllCourses = ({ courses }) => {
                     Digital Marketing
                   </Tab>
                   <Tab
+                    selectedClassName=" px-3 text-white bg-[#0088CF] rounded-lg"
                     onClick={() => filterCourse("artificial intelligence")}
                     style={{
                       textTransform: "uppercase",
@@ -81,6 +79,7 @@ const AllCourses = ({ courses }) => {
                     Artificial Intelligence
                   </Tab>
                   <Tab
+                    selectedClassName=" px-3 text-white bg-[#0088CF] rounded-lg"
                     onClick={() => filterCourse("ui/ux design")}
                     style={{
                       textTransform: "uppercase",
@@ -93,6 +92,7 @@ const AllCourses = ({ courses }) => {
                     UI/UX Design
                   </Tab>
                   <Tab
+                    selectedClassName=" px-3 text-white bg-[#0088CF] rounded-lg"
                     onClick={() => filterCourse("spoken english")}
                     style={{
                       textTransform: "uppercase",
@@ -105,6 +105,7 @@ const AllCourses = ({ courses }) => {
                     Spoken English
                   </Tab>
                   <Tab
+                    selectedClassName=" px-3 text-white bg-[#0088CF] rounded-lg"
                     onClick={() => filterCourse("banking diploma")}
                     style={{
                       textTransform: "uppercase",
@@ -117,6 +118,7 @@ const AllCourses = ({ courses }) => {
                     Banking Diploma
                   </Tab>
                   <Tab
+                    selectedClassName=" px-3 text-white bg-[#0088CF] rounded-lg"
                     onClick={() => filterCourse("motion graphics")}
                     style={{
                       textTransform: "uppercase",
@@ -129,6 +131,7 @@ const AllCourses = ({ courses }) => {
                     Motion Graphics
                   </Tab>
                   <Tab
+                    selectedClassName=" px-3 text-white bg-[#0088CF] rounded-lg"
                     onClick={() => filterCourse("graphics design")}
                     style={{
                       textTransform: "uppercase",
@@ -162,7 +165,6 @@ const AllCourses = ({ courses }) => {
               <TabPanel key={index}>
                 <div className="border border-gray-200 bg-[#F6F6F6] py-7 mb-16 grid grid-cols-1 shadow-2xl min-h-[300px]">
                   {courseFilter?.length > 0 ? (
-                   
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:mx-9 gap-6 px-2 md:px-0">
                       {courseFilter?.map((item, index) => (
                         <CourseCart
@@ -172,9 +174,7 @@ const AllCourses = ({ courses }) => {
                         />
                       ))}
                     </div>
-                   
                   ) : (
-                   
                     <div className="flex items-center justify-center min-h-[40vh] ">
                       {"No Course Found"}
                     </div>
@@ -184,7 +184,7 @@ const AllCourses = ({ courses }) => {
             ))}
           </Tabs>
         ) : (
-          <div className='h-60 flex justify-center items-center'>
+          <div className="h-60 flex justify-center items-center">
             {/* <Loader /> */}
           </div>
         )}

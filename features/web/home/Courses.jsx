@@ -14,15 +14,17 @@ const Courses = (title = "", desc = "") => {
     { img: erp, title1: "ERP", title2: "DEVELOPMENT" },
   ];
   return (
-    <Container className="mt-10 md:mt-16 lg:mt-24">
+    <Container className="mt-8 md:mt-13 lg:mt-24">
       <div className="mx-auto pb-8">
         <h1 className="text-[#262262] text-2xl md:text-4xl font-bold text-center montserrat">
           COURSES
         </h1>
-        <p className="text-base md:text-2xl text-center mb-3 montserrat -mt-1">we offer</p>
+        <p className="text-base md:text-2xl text-center mb-3 montserrat -mt-1">
+          we offer
+        </p>
         <hr className="border border-[#262262]/30 mt-5 w-11/12 mx-auto" />
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-3 lg:mt-20">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-3 lg:mt-16">
         {courses?.map((course, idx) => (
           <div
             key={idx}
@@ -40,10 +42,13 @@ const Courses = (title = "", desc = "") => {
           </div>
         ))}
       </div>
-      <div className='text-center montserrat mt-8 md:mt-16'>
-      <Button className="bg-[#0088CF] w-fit text-center px-9 md:px-24 py-3 text-base md:text-lg lg:text-xl font-bold ">EXPLORE ALL COURSES</Button>
+      <div className="text-center montserrat mt-8 md:mt-10 lg:mt-16">
+        <Button className="bg-[#0088CF] w-fit text-center px-9 md:px-24 py-3 border border-black shadow-md shadow-black/40">
+          <span className="text-base md:text-lg lg:text-xl font-bold">
+            EXPLORE ALL COURSES
+          </span>
+        </Button>
       </div>
-
     </Container>
   );
 };

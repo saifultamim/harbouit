@@ -1,6 +1,5 @@
-
 // demoCourses.js
-import DM from '@/public/images/courses/DM.png'
+import DM from "@/public/images/courses/DM.png";
 export const courses = [
   {
     id: 1,
@@ -11,7 +10,7 @@ export const courses = [
     ximage: DM, // Add an image path
     price: "$199",
     duration: "3 Months",
-    xitemcode: 'TM0014',
+    xitemcode: "TM0014",
   },
   {
     id: 2,
@@ -22,7 +21,7 @@ export const courses = [
     ximage: DM,
     price: "$299",
     duration: "4 Months",
-    xitemcode: 'TM0014',
+    xitemcode: "TM0014",
   },
   {
     id: 3,
@@ -33,7 +32,7 @@ export const courses = [
     ximage: DM,
     price: "$149",
     duration: "2 Months",
-    xitemcode: 'TM0014',
+    xitemcode: "TM0014",
   },
   {
     id: 4,
@@ -44,7 +43,7 @@ export const courses = [
     ximage: DM,
     price: "$99",
     duration: "6 Weeks",
-    xitemcode: 'TM0014',
+    xitemcode: "TM0014",
   },
   {
     id: 5,
@@ -55,7 +54,7 @@ export const courses = [
     ximage: DM,
     price: "$129",
     duration: "8 Weeks",
-    xitemcode: 'TM0014',
+    xitemcode: "TM0014",
   },
   {
     id: 6,
@@ -66,7 +65,7 @@ export const courses = [
     ximage: DM,
     price: "$179",
     duration: "3 Months",
-    xitemcode: 'TM0014',
+    xitemcode: "TM0014",
   },
   {
     id: 7,
@@ -77,6 +76,6 @@ export const courses = [
     ximage: DM,
     price: "$139",
     duration: "2.5 Months",
-    xitemcode: 'TM0014',
+    xitemcode: "TM0014",
   },
 ];

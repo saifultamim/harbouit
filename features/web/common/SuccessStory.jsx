@@ -1,407 +1,89 @@
-// import { SUCCESS_STORIES } from "@/utils/data/home/successStory";
-// import Image from "next/image";
-
-// const SuccessStory = () => {
-//   return (
-//     <section className="">
-//       {SUCCESS_STORIES?.map((story, idx) => (
-//         <div key={idx}>
-//           <Image src={story.img} alt="story" />
-//           <p>{story.desc}</p>
-//           <p>{story.name}</p>
-//           <p>{story.designation}</p>
-//           <p>{story.company}</p>
-//         </div>
-//       ))}
-//     </section>
-//   );
-// };
-// export default SuccessStory;
-// ==========================================================
-// "use client";
-// import React from "react";
-// import Slider from "react-slick";
-// import { SUCCESS_STORIES } from "@/utils/data/home/successStory";
-// import Image from "next/image";
-
-// function MultipleItems() {
-//   const settings = {
-//     // dots: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     autoplay: true,
-//     autoplaySpeed: 3000,
-//     //   responsive: [
-//     //   {
-//     //     breakpoint: 1024,
-//     //     settings: {
-//     //       slidesToShow: 2,
-//     //       slidesToScroll: 1,
-//     //     }
-//     //   },
-//     //   {
-//     //     breakpoint: 640,
-//     //     settings: {
-//     //       slidesToShow: 1,
-//     //       slidesToScroll: 1,
-//     //     }
-//     //   }
-//     // ]
-//   };
-//   return (
-//     <div className="slider-container border border-red-600 text-[#D9D9D9] montserrat text-base">
-//       <Slider {...settings} className="">
-//         {SUCCESS_STORIES?.map((story, idx) => (
-//           <div key={idx} className="bg-[#0F75BC] rounded-2xl">
-//             <Image src={story.img} alt="story" />
-//             <p className="">{story.desc}</p>
-//             <p className="font-semibold">{story.name}</p>
-//             <p>{story.designation}</p>
-//             <p>{story.company}</p>
-//           </div>
-//         ))}
-//       </Slider>
-//     </div>
-//   );
-// }
-
-// export default MultipleItems;
-// ========================================================
-// "use client";
-// import React from "react";
-// import Slider from "react-slick";
-// import Image from "next/image";
-// import { SUCCESS_STORIES } from "@/utils/data/home/successStory";
-// import ReuseableSlider from "@/components/animateSlider/ReuseableSlider";
-
-// function TestimonialsSlider() {
-//   const settings = {
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     autoplay: true,
-//     autoplaySpeed: 4000,
-//     responsive: [
-//       {
-//         breakpoint: 1320,
-//         settings: {
-//           slidesToShow: 3,
-//           slidesToScroll: 1,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 900,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 1,
-//           initialSlide: 1,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 600,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//           initialSlide: 1,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//           initialSlide: 1,
-//           infinite: true,
-//         },
-//       },
-
-//       {
-//         breakpoint: 1320,
-//         settings: {
-//           // slidesToShow: 4,
-//           slidesToShow: 3,
-//           slidesToScroll: 1,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 900,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 1,
-//           initialSlide: 1,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 600,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 1,
-//           initialSlide: 1,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//           initialSlide: 1,
-//           infinite: true,
-//         },
-//       },
-//     ],
-//   };
-
-//   return (
-//     <div className="slider-container text-[#D9D9D9] montserrat text-[12px] mt-9 md:mt-28">
-//       <div className="mb-8">
-//         <p className="montserrat text-lg md:text-2xl lg:text-4xl font-normal text-[#000000] text-center">
-//           SUCESS STORIES
-//         </p>
-//       </div>
-//       <Slider {...settings} className="">
-//         {SUCCESS_STORIES?.map((story, idx) => (
-//           <div key={idx} className="px-4">
-//             <div className="bg-[#0F75BC] rounded-2xl h-full shadow-lg flex flex-col px-4 md:px-9 lg:px-14  py-2 md:py-6 lg:py-10">
-//               <div className="flex justify-start">
-//                 <Image
-//                   src={story.img}
-//                   alt="story"
-//                   width={60}
-//                   height={60}
-//                   className="rounded-full object-cover"
-//                 />
-//               </div>
-//               <p className="mt-3">{`"${story.desc}"`}</p>
-//               <div className="mt-6">
-//                 <p className="font-semibold">{story.name}</p>
-//                 <p>{story.designation}</p>
-//                 <p>{story.company}</p>
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </Slider>
-//       {/* =================
-//       {/* <ReuseableSlider responsive={true}>
-//  {SUCCESS_STORIES?.map((story, idx) => (
-//           <div key={idx} className="px-4">
-//             <div className="bg-[#0F75BC] rounded-2xl h-full shadow-lg flex flex-col px-14 py-10">
-//               <div className="flex justify-start">
-//                 <Image
-//                   src={story.img}
-//                   alt="story"
-//                   width={60}
-//                   height={60}
-//                   className="rounded-full object-cover"
-//                 />
-//               </div>
-//               <p className="mt-3">
-//                 {`"${story.desc}"`}
-//               </p>
-//               <div className="mt-6">
-//                 <p className="font-semibold">{story.name}</p>
-//                 <p>{story.designation}</p>
-//                 <p>{story.company}</p>
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </ReuseableSlider> */}
-//       {/* ===================== */}
-//     </div>
-//   );
-// }
-
-// export default TestimonialsSlider;
-//===========================================================================
-
-// "use client";
-// import React from "react";
-// import Slider from "react-slick";
-// import Image from "next/image";
-// import { SUCCESS_STORIES } from "@/utils/data/home/successStory";
-// import ReuseableSlider from "@/components/animateSlider/ReuseableSlider";
-
-// function TestimonialsSlider() {
-//   const settings = {
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     autoplay: true,
-//     autoplaySpeed: 4000,
-//     responsive: [
-//       {
-//         breakpoint: 1320,
-//         settings: {
-//           slidesToShow: 3,
-//           slidesToScroll: 1,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 900,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 1,
-//           initialSlide: 1,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 600,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//           initialSlide: 1,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//           initialSlide: 1,
-//           infinite: true,
-//         },
-//       },
-
-//       {
-//         breakpoint: 1320,
-//         settings: {
-//           // slidesToShow: 4,
-//           slidesToShow: 3,
-//           slidesToScroll: 1,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 900,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 1,
-//           initialSlide: 1,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 600,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 1,
-//           initialSlide: 1,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//           initialSlide: 1,
-//           infinite: true,
-//         },
-//       },
-//     ],
-//   };
-
-//   return (
-//     <div className="slider-container text-[#D9D9D9] montserrat text-[12px] mt-9 md:mt-28">
-//       <div className="mb-8">
-//         <p className="montserrat text-lg md:text-2xl lg:text-4xl font-normal text-[#000000] text-center">
-//           SUCESS STORIES
-//         </p>
-//       </div>
-//       <Slider {...settings}>
-//         {SUCCESS_STORIES?.map((story, idx) => (
-//           <div key={idx}>
-//             <div className="bg-[#0F75BC] rounded-2xl h-full shadow-lg flex flex-col px-4 md:px-9 lg:px-14  py-2 md:py-6 lg:py-10">
-//               <div className="flex justify-start">
-//                 <Image
-//                   src={story.img}
-//                   alt="story"
-//                   width={60}
-//                   height={60}
-//                   className="rounded-full object-cover"
-//                 />
-//               </div>
-//               <p className="mt-3">{`"${story.desc}"`}</p>
-//               <div className="mt-6">
-//                 <p className="font-semibold">{story.name}</p>
-//                 <p>{story.designation}</p>
-//                 <p>{story.company}</p>
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </Slider>
-//     </div>
-//   );
-// }
-
-// export default TestimonialsSlider;
-//=======================================================
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import Image from "next/image";
 import { SUCCESS_STORIES } from "@/utils/data/home/successStory";
-import ReuseableSlider from "@/components/animateSlider/ReuseableSlider";
+import Image from "next/image";
+import { Container } from "@/components/ui/Container";
 
-function CenterMode() {
+function VariableWidth() {
+  const [cardWidth, setCardWidth] = useState(500);
   const settings = {
-    className: "center",
+    className: "slider variable-width",
+    infinite: true,
     centerMode: true,
-    infinite: true,
-    centerPadding: "10px",
-    slidesToShow: 3,
-    // speed: 500,
-    infinite: true,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    variableWidth: true,
     autoplay: true,
     autoplaySpeed: 4000,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: false,
+          centerMode: false,
+        },
+      },
+
+      {
+        breakpoint: 320, // Phones
+        settings: {
+          slidesToShow: 1,
+          variableWidth: false,
+          centerMode: false,
+        },
+      },
+    ],
   };
+
+  useEffect(() => {
+    const updateWidth = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth > 2000) setCardWidth(800);
+      else {
+        setCardWidth(500);
+      }
+    };
+
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
+
   return (
-    <div className="slider-container text-[#D9D9D9] montserrat text-[12px] mt-9 md:mt-28 gap-12">
-      <Slider {...settings}>
-        {SUCCESS_STORIES?.map((story, idx) => (
-          <div key={idx} className='px-7'>
-            <div className="bg-[#0F75BC] rounded-2xl h-full shadow-lg flex flex-col px-4 md:px-9 lg:px-14  py-2 md:py-6 lg:py-10">
-              <div className="flex justify-start">
-                <Image
-                  src={story.img}
-                  alt="story"
-                  width={60}
-                  height={60}
-                  className="rounded-full object-cover"
-                />
-              </div>
-              <p className="mt-3">{`"${story.desc}"`}</p>
-              <div className="mt-6">
-                <p className="font-semibold">{story.name}</p>
-                <p>{story.designation}</p>
-                <p>{story.company}</p>
+    <Container className="max-w-full px-0 montserrat mt-9 md:mt-16 lg:mt-32">
+      <p className="text-lg md:text-2xl lg:text-4xl text-center mb-3 md:mb-7">
+        SUCESS STORIES
+      </p>
+      <div className="text-[#D9D9D9] text-sm">
+        <Slider {...settings}>
+          {SUCCESS_STORIES?.map((story, idx) => (
+            <div key={idx} className="px-4" style={{ width: cardWidth }}>
+              <div className="bg-[#0F75BC] rounded-2xl h-full shadow-lg flex flex-col px-4 md:px-8 lg:px-16 py-4 md:py-6 lg:py-10">
+                <div className="flex justify-start">
+                  <Image
+                    src={story.img}
+                    alt="story"
+                    width={60}
+                    height={60}
+                    className="rounded-full object-cover"
+                  />
+                </div>
+                <p className="mt-3 text-justify">{`"${story.desc}"`}</p>
+                <div className="mt-6">
+                  <p className="font-semibold">{story.name}</p>
+                  <p>{story.designation}</p>
+                  <p>{story.company}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
-    </div>
+          ))}
+        </Slider>
+      </div>
+    </Container>
   );
 }
 
-export default CenterMode;
+export default VariableWidth;

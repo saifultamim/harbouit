@@ -1,5 +1,3 @@
-// Demo Data
-
 export const course = {
   xdesc: "Master Data Structures & Algorithms - Level Up Your Coding Skills",
   title: "Data Structures & Algorithms Bootcamp",
