@@ -8,10 +8,10 @@ import Button from "@/components/ui/Button";
 
 const Courses = (title = "", desc = "") => {
   const courses = [
-    { img: graphics, title1: "GRAPHICS", title2: "DESIGN" },
-    { img: web, title1: "WEB", title2: "DESIGN" },
-    { img: digital, title1: "DIGITAL", title2: "MARKETING" },
-    { img: erp, title1: "ERP", title2: "DEVELOPMENT" },
+    {id:1, img: graphics, title1: "GRAPHICS", title2: "DESIGN" },
+    {id:2,  img: web, title1: "WEB", title2: "DESIGN" },
+    { id:3, img: digital, title1: "DIGITAL", title2: "MARKETING" },
+    {id:4,  img: erp, title1: "ERP", title2: "DEVELOPMENT" },
   ];
   return (
     <Container className="mt-8 md:mt-13 lg:mt-24">
@@ -24,18 +24,18 @@ const Courses = (title = "", desc = "") => {
         </p>
         <hr className="border border-[#262262]/30 mt-5 w-11/12 mx-auto" />
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-3 lg:mt-16">
-        {courses?.map((course, idx) => (
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-0 md:mt-3 lg:mt-16">
+        {courses?.map((course) => (
           <div
-            key={idx}
-            className="px-2 sm:px-4 py-4 sm:py-12 rounded-xl  md:rounded-[27px] bg-white shadow-[0_0_15px_0px_#0F75BC99] lg:shadow-[0_0_25px_0px_#0F75BC99] montserrat"
+            key={course.id}
+            className="px-2 sm:px-6 py-4 sm:py-12 rounded-xl  md:rounded-[27px] bg-white shadow-[0_0_15px_0px_#0F75BC99] lg:shadow-[0_0_18px_0px_#0F75BC99] montserrat mt-4 sm:mt-0"
           >
             <Image
               src={course.img}
               alt={course.title1}
-              className="w-9 md:w-14 lg:w-[70px] ml-3"
+              quality={95}
             />
-            <h2 className="text-[#0F75BC] text-base md:text-xl lg:text-3xl font-bold mt-3">
+            <h2 className="text-[#0F75BC] text-base md:text-xl lg:text-3xl font-bold mt-4">
               {course.title1}
             </h2>
             <h3 className="text-sm md:text-base lg:text-xl">{course.title2}</h3>

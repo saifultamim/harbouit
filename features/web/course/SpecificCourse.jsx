@@ -41,13 +41,13 @@ const SpecificCourse = () => {
             What to Expect
           </h4>
           <ul className="flex flex-col gap-2 font-[300]">
-            {courseContents?.course_content?.map((item, index) => (
+            {courseContents?.course_content?.map((item) => (
               <li
                 className={`flex gap-2 items-center text-[14px] font-semibold 
                       ${
                         !courseContents?.course_content?.length ? "hidden" : ""
                       }`}
-                key={index}
+                key={item}
               >
                 {item && <BsCheckCircleFill className="text-[#2457C5]" />}
                 <span>{item}</span>
@@ -89,10 +89,10 @@ const SpecificCourse = () => {
           </h4>
           <ul className="flex flex-col gap-2 font-semibold">
             {courseContents?.what_you_learn &&
-              courseContents?.what_you_learn.map((item, index) => (
+              courseContents?.what_you_learn.map((item) => (
                 <li
                   className="flex gap-2  font-semibold text-[14px] relative"
-                  key={index}
+                  key={item}
                 >
                   <BsCheckCircleFill className="text-[#2457C5] text-[16px] absolute left-0 z-10 mt-[2px]" />
 
@@ -106,10 +106,10 @@ const SpecificCourse = () => {
             </h4>
             <ul className="flex flex-col gap-2 font-[300]">
               {courseContents?.requirement &&
-                courseContents?.requirement.map((item, index) => (
+                courseContents?.requirement.map((item) => (
                   <li
                     className="flex gap-2  font-semibold text-[14px] relative"
-                    key={index}
+                    key={item}
                   >
                     <BsCheckCircleFill className="text-[#2457C5] text-[16px] absolute left-0 z-10 mt-[2px]" />
 
@@ -127,14 +127,14 @@ const SpecificCourse = () => {
           </h4>
           <div className="flex flex-col gap-5 max-sm:text-sm text-[20px] font-normal">
             {faqs &&
-              faqs?.map((faq, index) => (
+              faqs?.map((faq) => (
                 <details
-                  key={index}
+                  key={faq.id}
                   className="group rounded-lg bg-[#D9D9D9]  p-2 [&_summary::-webkit-details-marker]:hidden"
                 >
                   <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
                     <h2 className="font-normal text-lg max-sm:text-sm">{`Q${
-                      index + 1
+                      faq.id + 1
                     }. ${faq?.question}`}</h2>
                   </summary>
                   <p className="mt-4 leading-relaxed text-gray-900">

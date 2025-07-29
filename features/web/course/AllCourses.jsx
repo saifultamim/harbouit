@@ -161,8 +161,8 @@ const AllCourses = ({ courses }) => {
               "banking diploma",
               "motion graphics",
               "graphics design",
-            ].map((tabName, index) => (
-              <TabPanel key={index}>
+            ].map((tabName) => (
+              <TabPanel key={tabName}>
                 <div className="border border-gray-200 bg-[#F6F6F6] py-7 mb-16 grid grid-cols-1 shadow-2xl min-h-[300px]">
                   {courseFilter?.length > 0 ? (
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:mx-9 gap-6 px-2 md:px-0">

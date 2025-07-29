@@ -5,9 +5,9 @@ import hqVideo from "@/public/images/home/hqVideo.png";
 const HQVideo = () => {
   return (
     <Container>
-      <div className="grid grid-cols-1 md:flex items-end  montserrat mt-8 md:mt-12 md:gap-8 lg:mt-24 lg:gap-14">
-        <div className="mx-auto">
-          <Image src={hqVideo} alt="hq video" />
+      <div className="grid grid-cols-1 md:flex items-end  montserrat mt-8 md:mt-12 md:gap-8 lg:mt-24 lg:gap-20">
+        <div>
+          <Image src={hqVideo} alt="hq video"/>
         </div>
         <div className="space-y-2 mt-5 lg:mt-0">
           <h3 className="text-[#262262] text-lg md:text-xl  lg:text-4xl font-bold max-w-40 lg:max-w-60">

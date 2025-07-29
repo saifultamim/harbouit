@@ -9,7 +9,7 @@ const NextArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="absolute lg:-right-9 -right-3  top-1/2  transform -translate-y-1/2 z-10 cursor-pointer md:block hidden"
+      className="absolute lg:-right-7 -right-3  top-1/2  transform -translate-y-1/2 z-10 cursor-pointer md:block hidden"
       onClick={onClick}
     >
       <Image src={rightArrow} alt="rightArrow" />
@@ -21,7 +21,7 @@ const PrevArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="absolute top-1/2  lg:-left-9 -left-3 transform -translate-y-1/2 z-10 cursor-pointer md:block hidden"
+      className="absolute top-1/2  lg:-left-7 -left-3 transform -translate-y-1/2 z-10 cursor-pointer md:block hidden"
       onClick={onClick}
     >
       <Image src={leftArrow} alt="leftArrow" />

@@ -37,15 +37,15 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { label: "ABOUT", href: "/about" },
-    { label: "COURSES", href: "/course" },
-    { label: "EVENT", href: "/events" },
-    { label: "CAREER", href: "/career" },
-    { label: "CONTACT", href: "/contact" },
+    {id:1, label: "ABOUT", href: "/about" },
+    {id:2, label: "COURSES", href: "/course" },
+    {id:3, label: "EVENT", href: "/events" },
+    {id:4, label: "CAREER", href: "/career" },
+    {id:5, label: "CONTACT", href: "/contact" },
   ];
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 mt-3 md:mt-5 lg:mt-12">
+    <div className="fixed top-0 left-0 w-full z-50 mt-3 md:mt-5 lg:mt-11">
       <div className="md:max-w-6xl px-2 mx-auto">
         <nav className="md:py-4 py-[0.3rem] px-3 sm:px-6 flex items-center justify-between bg-white rounded-lg shadow-[0_4px_18px_5px_#0000004D]">
           <div className="flex items-center  w-32 sm:w-56">
@@ -57,9 +57,9 @@ const Navbar = () => {
           <div className="flex gap-4">
             {/* Desktop Menu */}
             <div className="hidden lg:flex space-x-12 items-center text-xs lg:text-[15px] font-base font-montserrat_sans_serif">
-              {navLinks.map(({ label, href }) => (
+              {navLinks.map(({id, label, href }) => (
                 <Link
-                  key={label}
+                  key={id}
                   href={href}
                   className={`hover:text-[#0088CF]  hover:text-primary`}
                 >

@@ -51,6 +51,6 @@ body {
 }
 
 .text-stroke {
-  color:white;
+  color: white;
   -webkit-text-stroke-color: red;
 }

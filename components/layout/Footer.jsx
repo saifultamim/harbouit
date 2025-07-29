@@ -9,9 +9,9 @@ import youtube from "@/public/images/logo/youtube.png";
 import Link from "next/link";
 
 const socialMedia = [
-  { link: "#", img: facebook },
-  { link: "#", img: linkedin },
-  { link: "#", img: youtube },
+  {id:1, link: "#", img: facebook },
+  {id:2, link: "#", img: linkedin },
+  {id:3, link: "#", img: youtube },
 ];
 const Footer = () => {
   return (
@@ -40,9 +40,9 @@ const Footer = () => {
         <div className="flex items-center gap-5 mt-8">
           <hr className="w-full" />
           <div className="flex items-center gap-2 md:gap-5">
-            {socialMedia?.map((params, idx) => (
-              <Link href={params.link}>
-                <Image key={idx} src={params.img} alt="social media" />
+            {socialMedia?.map((params) => (
+              <Link href={params.link} key={params?.id}>
+                <Image src={params.img} alt="social media" />
               </Link>
             ))}
           </div>

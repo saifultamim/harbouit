@@ -34,21 +34,25 @@ export const classDetails = {
 
 export const faqs = [
   {
+    id:0,
     question: "Who is this course for?",
     answer:
       "This course is ideal for university students, aspiring software engineers, and professionals looking to strengthen their problem-solving skills.",
   },
   {
+    id:1,
     question: "Do I need prior programming knowledge?",
     answer:
       "Yes, basic programming knowledge is required. We recommend familiarity with any one language such as C, C++, Java, or JavaScript.",
   },
   {
+    id:2,
     question: "Will I get a certificate?",
     answer:
       "Yes! Upon completion, you will receive a recognized certificate from Harbour IT.",
   },
   {
+    id:3,
     question: "Are the classes recorded?",
     answer:
       "Yes, all live classes are recorded, so you can review them anytime during the course.",

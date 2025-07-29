@@ -6,17 +6,17 @@ import Image from "next/image";
 const Instructor = () => {
   return (
     <Container>
-      <div className="montserrat text-center mt-9 md:mt-16 lg:mt-28 mb-9 md:mb-10 lg:mb-16">
+      <div className="montserrat text-center mt-9 md:mt-16 lg:mt-36 mb-9 md:mb-10 lg:mb-16">
         <h2 className="text-[#0088CF] font-black text-2xl md:text-4xl lg:text-6xl">
           EXPERTS
         </h2>
         <p className="text-lg md:text-2xl font-medium">you can count on</p>
       </div>
 
-      <div className=" xl:w-9/12 lg:w-11/12 md:w-10/12  px-4  mx-auto">
+      <div className="xl:w-9/12 lg:w-11/12 md:w-10/12 px-4  mx-auto">
         <ReuseableSlider responsive={true}>
-          {INSTRUCTORS?.map((teacher, idx) => (
-            <div key={idx} className="">
+          {INSTRUCTORS?.map((teacher) => (
+            <div key={teacher.id} className="">
               <div className=" mb-4 bg-white w-11/12 mx-auto">
                 <Image
                   src={teacher?.img || user}
@@ -25,10 +25,10 @@ const Instructor = () => {
                 />
 
                 <div className=" mx-auto shadow-custom rounded-b-[8px] -mt-3 montserrat">
-                  <div className="px-3 py-6">
+                  <div className="px-5 pt-7 pb-5">
                     <p
                       className={`${
-                        teacher?.name?.length > 20 ? "text-sm" : "text-base"
+                        teacher?.name?.length > 20 ? "text-sm" : "text-xl leading-5"
                       } text-black font-extrabold uppercase`}
                     >
                       {teacher?.name}
@@ -36,7 +36,7 @@ const Instructor = () => {
                     <p className="text-xs text-[#333333]">
                       {teacher?.expertArea || "Top Rated Freelancer"}
                     </p>
-                    <p className="text-xs text-[#333333] font-medium">
+                    <p className="text-xs text-[#333333]">
                       {teacher?.education}
                     </p>
                   </div>

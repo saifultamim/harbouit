@@ -53,14 +53,14 @@ function VariableWidth() {
   }, []);
 
   return (
-    <Container className="max-w-full px-0 montserrat mt-9 md:mt-16 lg:mt-32">
+    <Container className="max-w-full sm:px-0 montserrat mt-9 md:mt-16 lg:mt-36">
       <p className="text-lg md:text-2xl lg:text-4xl text-center mb-3 md:mb-7">
         SUCESS STORIES
       </p>
-      <div className="text-[#D9D9D9] text-sm">
+      <div className="text-[#D9D9D9] text-sm max-h-[30rem]">
         <Slider {...settings}>
-          {SUCCESS_STORIES?.map((story, idx) => (
-            <div key={idx} className="px-4" style={{ width: cardWidth }}>
+          {SUCCESS_STORIES?.map((story) => (
+            <div key={story.id} className="px-4" style={{ width: cardWidth }}>
               <div className="bg-[#0F75BC] rounded-2xl h-full shadow-lg flex flex-col px-4 md:px-8 lg:px-16 py-4 md:py-6 lg:py-10">
                 <div className="flex justify-start">
                   <Image

@@ -10,7 +10,7 @@ const PromoBanner = () => {
             SECURE YOUR FUTURE
             <br /> WITH NEXT GEN SKILLSET
           </h2>
-          <Button className="bg-[#0088CF] w-fit md:px-10 lg:px-20 md:py-2 lg:py-4 text-base md:text-lg lg:text-2xl font-normal">
+          <Button className="bg-[#0088CF] w-fit md:px-10 lg:px-20 md:py-2 lg:py-4 text-base md:text-lg lg:text-2xl font-normal rounded-[15px]">
             Register Now
           </Button>
         </div>

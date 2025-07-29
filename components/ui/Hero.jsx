@@ -9,7 +9,7 @@ import homeHero from "@/public/images/home/hero.png";
 import aboutHero from "@/public/images/about/hero.png";
 
 const Hero = ({ about = false }) => {
-  const images = [ps, ai, wp, ga, data, smm];
+  const images = [{id:1,img:ps},{id:2,img:ai},{id:3,img:wp},{id:4,img:ga},{id:5,img:data},{id:6,img:smm}];
   const heroImage = about ? "/images/about/hero.png" : "/images/home/hero.png";
   return (
     <div className="">
@@ -41,14 +41,14 @@ const Hero = ({ about = false }) => {
 
       {!about && (
         <div className="">
-          <div className="bg-gradient-to-b from-[#0F75BC] to-[#262262] w-fit mx-auto rounded-2x z-20 px-4 py-3 md:px-16 lg:px-28 lg:py-11 md:py-8 2xl:px-28  rounded-lg">
-            <div className="flex justify-center gap-3 md:gap-9">
-              {images.map((icon, idx) => (
+          <div className="bg-gradient-to-b from-[#0F75BC] to-[#262262] border border-[#000000] w-10/12 sm:w-fit mx-auto rounded-2x z-20 px-12 py-5 md:px-16 lg:px-28 lg:py-11 md:py-8 2xl:px-28  rounded-xl md:rounded-[20px]">
+            <div className="grid grid-cols-3 md:flex justify-center gap-4 md:gap-4 lg:gap-9">
+              {images.map((icon) => (
                 <Image
-                  key={idx}
-                  src={icon}
-                  alt={`Service ${idx}`}
-                  className="w-7 md:w-10 lg:w-16 2xl:w-28 "
+                  key={icon.id}
+                  src={icon.img}
+                  alt={`Service ${icon.id}`}
+                  className="mx-auto"
                 />
               ))}
             </div>
